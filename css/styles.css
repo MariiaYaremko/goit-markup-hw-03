@@ -20,8 +20,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: 0 auto;
   outline: 2px solid tomato;
 }
 /* Колір основного тексту #212121*/
@@ -36,6 +35,16 @@ ul {
   list-style: none;
 }
 
+/* header */
+.header {
+  height: 80px;
+  display: flex;
+}
+.header .container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
 /* logo */
 .logo {
   color: var(--title-text-color);
@@ -46,19 +55,19 @@ ul {
   text-decoration: none;
   width: 145px;
   height: 31px;
-  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  background-color: tomato;
+}
+.main-nav .logo {
+  display: flex;
+  align-items: center;
 }
 .logo-web {
   color: var(--accent-color);
 }
 
 /* Site nav */
-.nav-container {
-  display: flex;
-  align-items: center;
-
-  height: 80px;
-}
 .main-nav {
   display: flex;
 }
@@ -136,8 +145,11 @@ ul {
 .section-1 {
   background-color: var(--primary-bg-color);
 }
-.section-2 {
+.section-2, {
   background-color: var(--third-bg-color);
+}
+.section-3 { 
+ background-color: var(--third-bg-color)
 }
 .section-title {
   color: var(--title-text-color);
@@ -284,7 +296,13 @@ ul {
 .footer-space {
   background-color: var(--secondary-bg-color);
   margin-bottom: 0px;
+  height: 252px;
 }
+.footer-space .container {
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  }
 .footer-space .logo-studio {
   color: var(--primary-white-color);
 }
@@ -294,6 +312,11 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+  margin-bottom: 0px;
+}
+.em-tel {
+  padding-left: 0px;
+  margin-bottom: 0px;
 }
 .footer-space .link {
   color: var(--third-text-color);
