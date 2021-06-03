@@ -267,6 +267,7 @@ ul {
 .card {
   width: 270px;
   height: 368px;
+  border: 1px solid var(--secondary-text-color)
 }
 .infocard {
   padding-top: 30px;
