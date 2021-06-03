@@ -24,7 +24,7 @@ body {
   margin: 0 auto;
   border-bottom: var(--border-color);
 
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 /* Колір основного тексту #212121*/
 /* Вторинний колір тексту #757575 */
@@ -410,6 +410,7 @@ ul {
   width: 1220px;
   padding-left: 0px;
   padding-right: 0px;
+  padding-top: 94px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 94px;
@@ -419,10 +420,9 @@ ul {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 94px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 .item .text {
   letter-spacing: 0.06em;
