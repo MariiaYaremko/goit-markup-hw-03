@@ -352,6 +352,12 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.select {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  }
+
 .select .link:hover,
 .select .link:focus
  .cards .text { 
@@ -369,11 +375,10 @@ ul {
   border-radius: 4px;
   height: 38px;
 }
-.select .link {
+.select .link {  
   display: block;
 }
-
-.select-button .filter-button {
+.filter-button {
   color:(var(--primary-text-color);
   background-color: var(--third-bg-color);
   font-weight: 500;
@@ -388,7 +393,7 @@ ul {
   margin-right: 8px;
   border: 1px solid var(--third-bg-color);
   border-radius: 4px;
-  height: 38px;
+  height: 38px; 
 }
 /* .select .filter */
 /* .select-button {
