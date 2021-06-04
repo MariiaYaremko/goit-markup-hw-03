@@ -151,7 +151,7 @@ ul {
 .section-1 {
   background-color: var(--primary-bg-color);
 }
-.section-2, {
+.section-2 {
   background-color: var(--third-bg-color);
 }
 .section-3 { 
@@ -239,7 +239,7 @@ ul {
   font-family: inherit;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
   display: 200, 50;
@@ -379,7 +379,7 @@ ul {
   display: block;
 }
 .filter-button {
-  color:(var(--primary-text-color);
+  color:var(--primary-text-color);
   background-color: var(--third-bg-color);
   font-weight: 500;
   font-size: 16px;
