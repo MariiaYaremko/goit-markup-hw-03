@@ -8,7 +8,8 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #2f303a;
   --third-bg-color: #f5f4fa;
-  --border-color: #ECECEC
+  --border-color: #ECECEC;
+  --border-cards-color: #E5E5E5;
 }
 
 body {
@@ -43,7 +44,7 @@ ul {
   height: 80px;
   display: block;
   box-sizing: border-box;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid var(--border-cards-color)
 } 
 .header .container {
   height: 80px;
@@ -267,7 +268,8 @@ ul {
 .card {
   width: 270px;
   height: 368px;
-  border: 1px solid var(--secondary-text-color)
+  border: 1px solid var(--border-cards-color)#E5E5E5;
+  background-color: var(--primary-bg-color)
 }
 .infocard {
   padding-top: 30px;
@@ -339,9 +341,10 @@ ul {
 .select {
   display: flex;
   justify-content: center;
-  margin-right: 8px; 
   margin-top: 0px;
   margin-bottom: 50px;
+  /* margin-right: 8px; 
+   */
   text-align: center;
 
 }
@@ -351,8 +354,7 @@ ul {
 }
 .select .link:hover,
 .select .link:focus
- .cards .text
- { 
+ .cards .text { 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 500;
@@ -366,9 +368,30 @@ ul {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   height: 38px;
-} 
-/* .select .filter { */
-.select-button {
+}
+.select .link {
+  display: block;
+}
+
+.select-button .filter-button {
+  color:(var(--primary-text-color);
+  background-color: var(--third-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63; 
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 8px;
+  border: 1px solid var(--third-bg-color);
+  border-radius: 4px;
+  height: 38px;
+}
+/* .select .filter */
+/* .select-button {
   color: var(--secondary-text-color);
   font-weight: 400;
   font-size: 16;
@@ -382,30 +405,61 @@ ul {
   border: 1px solid var(--third-bg-color);
   background-color: var(--third-bg-color);
   border-radius: 4px;
-}
+} */
+/* .select-button .link {
+  font-weight: 400;
+  font-size: 16;
+  line-height: 1.88;
+  text-align: center;   
+  padding-left: 22px;
+  /* padding-right: 22px; */
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+  /* margin-right: 8px;
+  border: 1px solid var(--third-bg-color);
+  background-color: var(--third-bg-color);
+  border-width: 0px;
+  border-radius: 4px;
+} */ 
+  /* button:hover {
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  height: 38px;
+  padding: 6px, 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-right: 8px;
+} */
+
 .links {
   display: flex;
   flex-wrap: wrap; 
 }
+/* portfolio  cards*/
 .cards {
  width: 1200px;
   display: flex;
   flex-wrap: wrap;
   padding-left: 0px;
  }
- .item:nth-child (3n) {
+ .item: nth-child (3n) {
   margin-right: 0px;
 } 
 .cards .item {
   width: calc ((100%-60)/3);
   /* width: 370px; */
   height: 404px;
-   margin-right: 27px;
+  margin-right: 27px;
   margin-bottom: 30px;
   padding-left: 0px;
-  margin-left: 0px; */ 
+  margin-left: 0px;
   box-sizing: border-box;
-  border: 1px solid #E5E5E5
+  border: 1px solid var(--border-cards-color)
 }
 .section-p {
   width: 1220px;
@@ -435,32 +489,3 @@ ul {
   padding-left: 24px;
   padding-left: 20px;
 }
-.select-button .link {
-  font-weight: 400;
-  font-size: 16;
-  line-height: 1.88;
-  text-align: center;   
-  padding-left: 22px;
-  /* padding-right: 22px; */
-  padding-top: 6px;
-  /* padding-bottom: 6px; */
-  margin-right: 8px;
-  border: 1px solid var(--third-bg-color);
-  background-color: var(--third-bg-color);
-  border-width: 0px;
-  border-radius: 4px;
-}
-  /* button:hover {
-  background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-  color: var(--primary-white-color);
-  height: 38px;
-  padding: 6px, 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-right: 8px;
-} */
